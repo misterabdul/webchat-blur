@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebChat Blur</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="main" class="grey darken-3">
+      <div id="splash" class="splash grey darken-3">
+        <div class="preloader-wrapper active">
+          <div class="spinner-layer spinner-red-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div>
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <img src="icon.png" />
+        <span>WebChat Blur</span>
+      </div>
+      <div class="content">
+        <div class="form-setting">
+          <div class="form-setting-label">Global Blur</div>
+          <div class="switch">
+            <label>
+              <input id="checkbox-global" type="checkbox" checked />
+              <span class="lever"></span>
+            </label>
+          </div>
+        </div>
+        <div class="not-global">
+          <div class="form-setting">
+            <div class="form-setting-label">Web Whatsapp Blur</div>
+            <div class="switch">
+              <label>
+                <input id="checkbox-web-whatsapp" type="checkbox" checked />
+                <span class="lever"></span>
+              </label>
+            </div>
+          </div>
+          <div class="form-setting">
+            <div class="form-setting-label">Web Telegram Blur</div>
+            <div class="switch">
+              <label>
+                <input id="checkbox-web-telegram" type="checkbox" checked />
+                <span class="lever"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

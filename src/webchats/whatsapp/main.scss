@@ -1,0 +1,43 @@
+body.webchat-blur {
+  div#side > div#pane-side,
+  div.statusList {
+    div[data-testid="cell-frame-container"] {
+      filter: blur(6px);
+    }
+    div[data-testid="cell-frame-container"]:hover {
+      filter: none;
+    }
+  }
+
+  div[data-testid="contact-list-key"] {
+    div[data-testid="cell-frame-container"] {
+      filter: blur(6px);
+    }
+    div[data-testid="cell-frame-container"]:hover {
+      filter: none;
+    }
+  }
+
+  div#main {
+    header > div[role="button"] {
+      filter: blur(6px);
+    }
+    header > div[role="button"]:hover {
+      filter: none;
+    }
+    div.focusable-list-item > div {
+      filter: blur(10px);
+    }
+    div.focusable-list-item > div:hover {
+      filter: none;
+    }
+  }
+
+  div#main > div > div.copyable-area > span > div {
+    filter: blur(10px);
+  }
+
+  div#main > div > div.copyable-area > span > div:hover {
+    filter: none;
+  }
+}

@@ -1,0 +1,55 @@
+body.webchat-blur {
+  div#LeftColumn {
+    div#LeftColumn-main {
+      div.ListItem {
+        filter: blur(6px);
+      }
+      div.ListItem:hover {
+        filter: none;
+      }
+    }
+  }
+
+  div#MiddleColumn {
+    div.MiddleHeader {
+      div.ChatInfo {
+        filter: blur(6px);
+      }
+      div.ChatInfo:hover {
+        filter: none;
+      }
+      div.HeaderPinnedMessage {
+        filter: blur(6px);
+      }
+      div.HeaderPinnedMessage:hover {
+        filter: none;
+      }
+    }
+    div.MessageList {
+      div.sticky-date {
+        filter: blur(6px);
+      }
+      div.sticky-date:hover {
+        filter: none;
+      }
+      div.Message {
+        div.Avatar,
+        div.message-content-wrapper {
+          filter: blur(6px);
+        }
+
+        div.Avatar:hover,
+        div.message-content-wrapper:hover {
+          filter: none;
+        }
+
+        div.unread-divider {
+          filter: blur(6px);
+        }
+        div.unread-divider:hover {
+          filter: none;
+        }
+      }
+    }
+  }
+}

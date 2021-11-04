@@ -1,0 +1,46 @@
+body.webchat-blur {
+  div#main-columns {
+    div#column-left {
+      ul.chatlist {
+        li.rp {
+          filter: blur(6px);
+        }
+        li.rp:hover {
+          filter: none;
+        }
+      }
+    }
+
+    div#column-center {
+      div.sidebar-header,
+      div.topbar {
+        div.chat-info {
+          filter: blur(6px);
+        }
+        div.chat-info:hover {
+          filter: none;
+        }
+        div.pinned-message {
+          filter: blur(6px);
+        }
+        div.pinned-message:hover {
+          filter: none;
+        }
+      }
+      div.bubbles {
+        div.service-msg {
+          filter: blur(6px);
+        }
+        div.service-msg:hover {
+          filter: none;
+        }
+        div.bubble-content-wrapper {
+          filter: blur(6px);
+        }
+        div.bubble-content-wrapper:hover {
+          filter: none;
+        }
+      }
+    }
+  }
+}

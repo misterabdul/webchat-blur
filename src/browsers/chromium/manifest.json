@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "Webchat Blur",
+  "description": "Blur display on webchat app's until you hover on it.",
+  "version": "1.0.0",
+  "author": "Abdul Pasaribu",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "icons": {
+    "16": "icon-16x16.png",
+    "48": "icon-48x48.png"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ],
+      "css": [
+        "web-whatsapp.css"
+      ],
+      "js": [
+        "web-whatsapp.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://web.telegram.org/k/*"
+      ],
+      "css": [
+        "web-telegram-k.css"
+      ],
+      "js": [
+        "web-telegram.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://web.telegram.org/z/*"
+      ],
+      "css": [
+        "web-telegram-z.css"
+      ],
+      "js": [
+        "web-telegram.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://web.telegram.org/?legacy=1#/*"
+      ],
+      "css": [
+        "web-telegram-old.css"
+      ],
+      "js": [
+        "web-telegram.js"
+      ]
+    }
+  ]
+}

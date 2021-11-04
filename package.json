@@ -1,0 +1,38 @@
+{
+  "name": "@misterabdul/webchat-blur",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "Blur display on webchat app's until you hover on it.",
+  "author": {
+    "name": "Abdul Pasaribu",
+    "email": "abdoelrachmad@gmail.com",
+    "url": "https://misterabdul.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/misterabdul/webchat-blur"
+  },
+  "license": "MIT",
+  "scripts": {
+    "watch": "mix watch",
+    "watch:chromium": "WEBCHAT_BLUR_BROWSER=chromium mix watch",
+    "watch:firefox": "WEBCHAT_BLUR_BROWSER=firefox mix watch",
+    "build": "mix build",
+    "build:chromium": "WEBCHAT_BLUR_BROWSER=chromium mix build",
+    "build:firefox": "WEBCHAT_BLUR_BROWSER=firefox mix build"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.161",
+    "@types/firefox": "^0.0.31",
+    "@types/webextension-polyfill": "^0.8.1",
+    "laravel-mix": "^6.0.34",
+    "material-icons": "^1.10.0",
+    "materialize-css": "^1.0.0",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.43.3",
+    "sass-loader": "^12.2.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.4",
+    "webextension-polyfill": "^0.8.0"
+  }
+}
