@@ -2,7 +2,7 @@
 
 Blur important content webchat apps like whatsapp & telegram until you hover on it.
 
-![Webchat Blur](./statics/screen-sample.gif "Webchat Blur")
+![Webchat Blur](./res/screen-sample.gif "Webchat Blur")
 
 ## Developing
 

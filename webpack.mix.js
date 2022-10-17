@@ -14,9 +14,9 @@ switch (browser) {
     mix.sass("src/browsers/main.scss", "dist/chromium/main.css");
     mix.copy("src/browsers/main.html", "dist/chromium/popup.html");
     mix.copy("src/browsers/chromium/manifest.json", "dist/chromium/manifest.json");
-    mix.copy("statics/icon.png", "dist/chromium/icon.png");
-    mix.copy("statics/icon-16x16.png", "dist/chromium/icon-16x16.png");
-    mix.copy("statics/icon-48x48.png", "dist/chromium/icon-48x48.png");
+    mix.copy("res/icon.png", "dist/chromium/icon.png");
+    mix.copy("res/icon-16x16.png", "dist/chromium/icon-16x16.png");
+    mix.copy("res/icon-48x48.png", "dist/chromium/icon-48x48.png");
 
     mix.ts("src/webchats/telegram/main.ts", "dist/chromium/web-telegram.js");
     mix.sass("src/webchats/telegram/main_k.scss", "dist/chromium/web-telegram-k.css");
@@ -34,9 +34,9 @@ switch (browser) {
     mix.sass("src/browsers/main.scss", "dist/firefox/main.css");
     mix.copy("src/browsers/main.html", "dist/firefox/popup.html");
     mix.copy("src/browsers/firefox/manifest.json", "dist/firefox/manifest.json");
-    mix.copy("statics/icon.png", "dist/firefox/icon.png");
-    mix.copy("statics/icon-16x16.png", "dist/firefox/icon-16x16.png");
-    mix.copy("statics/icon-48x48.png", "dist/firefox/icon-48x48.png");
+    mix.copy("res/icon.png", "dist/firefox/icon.png");
+    mix.copy("res/icon-16x16.png", "dist/firefox/icon-16x16.png");
+    mix.copy("res/icon-48x48.png", "dist/firefox/icon-48x48.png");
 
     mix.ts("src/webchats/telegram/main.ts", "dist/firefox/web-telegram.js");
     mix.sass("src/webchats/telegram/main_k.scss", "dist/firefox/web-telegram-k.css");
