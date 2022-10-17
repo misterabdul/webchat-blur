@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Webchat Blur",
   "description": "Blur display on webchat app's until you hover on it.",
-  "version": "1.0",
+  "version": "1.0.1",
   "author": "Abdul Pasaribu",
   "permissions": [
     "tabs",

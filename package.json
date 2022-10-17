@@ -1,7 +1,7 @@
 {
   "name": "@misterabdul/webchat-blur",
   "private": "true",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Blur display on webchat app's until you hover on it.",
   "author": {
     "name": "Abdul Pasaribu",
