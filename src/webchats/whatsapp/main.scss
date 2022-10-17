@@ -1,6 +1,7 @@
 body.webchat-blur {
   div#side > div#pane-side,
-  div.statusList {
+  div.statusList,
+  div[data-testid="drawer-right"] div#pane-side {
     div[data-testid="cell-frame-container"] {
       filter: blur(6px);
     }
@@ -18,13 +19,59 @@ body.webchat-blur {
     }
   }
 
-  div#main {
-    header > div[role="button"] {
+  div[data-testid="contact-info-drawer"] > div,
+  div[data-testid="group-info-drawer"] > div {
+    section > div:nth-child(1),
+    section > div:nth-child(2),
+    section > div:nth-child(3) {
       filter: blur(6px);
     }
-    header > div[role="button"]:hover {
+    section > div:nth-child(1):hover,
+    section > div:nth-child(2):hover,
+    section > div:nth-child(3):hover {
       filter: none;
     }
+
+    section > div:nth-child(6) > div[data-testid="li-block"],
+    section > div:nth-child(6) > div[data-testid="li-report-spam"],
+    section
+      > div:nth-child(6)
+      > div:nth-child(2)
+      > div:nth-child(3)
+      > div
+      > div {
+      filter: blur(6px);
+    }
+    section > div:nth-child(6) > div[data-testid="li-block"]:hover,
+    section > div:nth-child(6) > div[data-testid="li-report-spam"]:hover,
+    section
+      > div:nth-child(6)
+      > div:nth-child(2)
+      > div:nth-child(3)
+      > div
+      > div:hover {
+      filter: none;
+    }
+  }
+
+  div[data-testid="drawer-left"] > span > div > div > div > div,
+  div[data-testid="drawer-right"] > span > div > span > div > div > div {
+    span > div[tabindex="-1"] {
+      filter: blur(6px);
+    }
+    span > div[tabindex="-1"]:hover {
+      filter: none;
+    }
+  }
+
+  div#main {
+    header[data-testid="conversation-header"] > div[role="button"] {
+      filter: blur(6px);
+    }
+    header[data-testid="conversation-header"]:hover > div[role="button"] {
+      filter: none;
+    }
+
     div.focusable-list-item > div {
       filter: blur(10px);
     }
@@ -36,8 +83,19 @@ body.webchat-blur {
   div#main > div > div.copyable-area > span > div {
     filter: blur(10px);
   }
-
   div#main > div > div.copyable-area > span > div:hover {
+    filter: none;
+  }
+
+  div[data-testid="chat-modal"] > div > div[tabindex="0"] > div > div > div {
+    filter: blur(6px);
+  }
+  div[data-testid="chat-modal"]
+    > div
+    > div[tabindex="0"]
+    > div
+    > div
+    > div:hover {
     filter: none;
   }
 }
